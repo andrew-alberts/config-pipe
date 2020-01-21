@@ -2,7 +2,7 @@
 	"transaction_process": {
 		"input_csv": "data.csv", 
 		"base_price_filter_low": 5.0, 
-		"base_price_filter_high": None, 
+		"base_price_filter_high": null, 
 		"tax_rate": 0.13, 
 		"output_csv": "transaction_agg.csv"
 	},
