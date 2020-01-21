@@ -1,0 +1,18 @@
+{
+	"transaction_process": {
+		"input_csv": "data.csv", 
+		"base_price_filter_low": 5.0, 
+		"base_price_filter_high": None, 
+		"tax_rate": 0.13, 
+		"output_csv": "transaction_agg.csv"
+	},
+	
+	"customer_process": {
+		"input_csv": "transaction_agg.csv", 
+		"date_filter_start": "2018-01-01", 
+		"date_filter_end": "2020-01-01", 
+		"price_normalizer":"transactions" , 
+		"output_cols": ["customer_id", "max_price", "total_price_norm"], 
+		"output_csv": "customer_agg.csv"
+	}
+}
