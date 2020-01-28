@@ -1,6 +1,5 @@
 import pandas as pd
-import argparse
-import json
+
 
 
 def transaction_process(input_csv, base_price_filter_low, base_price_filter_high, tax_rate, output_csv):
@@ -51,7 +50,6 @@ def customer_process(input_csv, date_filter_start, date_filter_end, price_normal
 
 
 if __name__ == "__main__":
-    
     transaction_process(
         "data.csv", 
         5.0, 
